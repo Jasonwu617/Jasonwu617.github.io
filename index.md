@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-![Jayson Tatum](https://chowderandchampions.com/wp-content/uploads/getty-images/2016/04/1211675968-1.jpeg)
+![Jayson Tatum](file:///Users/jasonwu/Downloads/whale.png)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
