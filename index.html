@@ -5,14 +5,30 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
 <body>
+<h1>Jason, Dawin, and Kenny</h1>
 <nav class="w3-bar w3-black">
   <a href="#Home" class="w3-button w3-bar-item">Home</a>
   <a href="#Bios" class="w3-button w3-bar-item">Bios</a>
 </nav>
+<section>
+  <img class="mySlides" src="Jason.png" style="width:100%">
+  <img class="mySlides" src="DawinJPG.JPG" style="width:100%">
+  <img class="mySlides" src="Kenny.JPG" style="width:100%">
+</section>
+var myIndex = 0;
+carousel();
 
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-  <img src= "whale.png" alt = "Whale">
-  <p> Test</p>
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
 </body>
 </html>
